@@ -52,8 +52,9 @@ function TaskFarmCluster()
     ClusterInfo("taskfarm",
         Dict{Symbol,Any}(
             :ntasks_per_node=>48,
-            :mem_per_cpu=>4000,
-            :cpus_per_task=>1
+            :mem_per_cpu=>3999,
+            :cpus_per_task=>1,
+            :ntasks=>48
         )
     )
 end
