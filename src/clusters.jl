@@ -59,6 +59,17 @@ function TaskFarmCluster()
     )
 end
 
+function CompChemCluster()
+    ClusterInfo("compchem",
+        Dict{Symbol,Any}(
+            :ntasks_per_node=>44,
+            :mem_per_cpu=>4340,
+            :cpus_per_task=>1,
+            :ntasks=>44
+        )
+    )
+end
+
 function ClusterInfo() 
     machine = read(`hostname`, String)
     if occursin("sulis", machine)
