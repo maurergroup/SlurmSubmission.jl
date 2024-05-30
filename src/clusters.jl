@@ -40,7 +40,7 @@ function ArcherCluster()
     ClusterInfo("archer",
         Dict{Symbol,Any}(
             :ntasks_per_node=>128,
-            :account=>"E635",
+            :account=>"e05-surfin-rjm",
             :partition=>"standard",
             :cpus_per_task=>1,
             :qos=>"standard"
